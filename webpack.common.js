@@ -1,4 +1,3 @@
-
 'use strict';
 
 require('dotenv').config();
@@ -42,7 +41,7 @@ webpackConfig.module.rules = [{
     test: /\.js$/,
     exclude: /node_modules/,
     use: {
-      loader: 'babel-loader',
+      loader: 'babel-loader'
       options: {
         presets: ['env', 'stage-0', 'react'],
         plugins: ['transform-react-jsx-source'],
